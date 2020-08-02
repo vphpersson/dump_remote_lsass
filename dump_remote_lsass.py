@@ -193,9 +193,9 @@ async def dump_lsass(
     :param relative_dump_path: The share-relative path of the future location of the memory dump on the remote system.
     :param dump_tree_id: The tree ID of the share connection from which to retrieve the memory dump. Default to the same
         tree id as that for the service executable.
-    :param service_name: The name to be given service that will
-    :param service_display_name:
-    :param service_argv: A sequence of arguments to be
+    :param service_name: The name to be given the service that will perform the dumping.
+    :param service_display_name: The name to be given the service that will perform the dumping.
+    :param service_argv: A sequence of arguments to be passed to the service.
     :param wait_time_in_seconds: The number of seconds to wait in each retry attempt.
     :param max_num_retries: The maximum number of retry attempts to perform waiting for the memory dump file to be
         available.
